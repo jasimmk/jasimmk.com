@@ -1,0 +1,50 @@
+# Ignore all the patterns
+# compiled Python files
+*.py[cod~]
+
+# OS junks
+.DS_Store
+Thumbs.db
+
+# backup/temp files
+*~
+\#*#
+.#*
+
+# Ignore VIM swp files (temp files while open in editor)
+*.swp
+
+# Ignore setuptools' *.egg-info directories created when you run
+# 'python setup.py develop'
+*.egg-info
+
+# Ignore build/test artifacts from nose/coverage/pylint
+dist/
+build/
+.coverage
+coverage.xml
+coverage_report/
+nosetests.xml
+pylint.txt
+/uploads/
+# Ignore databases
+/db.sqlite3
+
+# Ignore project files
+[Bb]uild/
+.settings/
+.project
+.pydevproject
+.conflict
+
+# Ignore logging
+*.log
+
+.sass-cache
+*.*~
+*.bak
+
+# IDE files
+*.jar
+*.sublime-project
+*.sublime-workspace
