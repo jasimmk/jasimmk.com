@@ -48,3 +48,8 @@ pylint.txt
 *.jar
 *.sublime-project
 *.sublime-workspace
+
+# Frontend
+/static/node_modules/
+/static/.bowerrc
+/static/bower/

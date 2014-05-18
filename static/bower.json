@@ -1,0 +1,9 @@
+{
+  "name": "jasimmk-com",
+  "ignore": [],
+  "dependencies": {
+    "jquery": "~1.11.0",
+    "font-awesome": "~4.0.3"
+  },
+  "private": true
+}
