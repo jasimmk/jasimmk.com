@@ -75,6 +75,7 @@ module.exports = function(grunt) {
                 },
                 files: {
                     'css/all.min.css': [
+                        'css/packages/font-awesome.css',
                         'css/skel.css',
                         'css/style.css',
                         'css/style-wide.css',
@@ -84,7 +85,9 @@ module.exports = function(grunt) {
                         'css/skel.css'
                     ],
                     'css/style.min.css': [
-                        'css/style.css'
+                        'css/packages/font-awesome.css',
+                        'css/style.css',
+
                     ],
                     'css/style-wide.min.css': [
                         'css/style-wide.css'
