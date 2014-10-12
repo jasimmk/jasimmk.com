@@ -4,14 +4,33 @@
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
-@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
 /*
 @import url('font-awesome.min.css');
 
 */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 200;
+  src: local("Source Sans Pro ExtraLight"), local("SourceSansPro-ExtraLight"), url(http://themes.googleusercontent.com/static/fonts/sourcesanspro/v7/toadOcfmlt9b38dHJxOBGMa9awK0IKUjIWABZIchFI8.woff) format("woff"); }
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: local("Source Sans Pro Light"), local("SourceSansPro-Light"), url(http://themes.googleusercontent.com/static/fonts/sourcesanspro/v7/toadOcfmlt9b38dHJxOBGNbE_oMaV8t2eFeISPpzbdE.woff) format("woff"); }
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  src: local("Source Sans Pro Semibold"), local("SourceSansPro-Semibold"), url(http://themes.googleusercontent.com/static/fonts/sourcesanspro/v7/toadOcfmlt9b38dHJxOBGJ6-ys_j0H4QL65VLqzI3wI.woff) format("woff"); }
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Source Sans Pro Bold"), local("SourceSansPro-Bold"), url(http://themes.googleusercontent.com/static/fonts/sourcesanspro/v7/toadOcfmlt9b38dHJxOBGFkQc6VGVFSmCnC_l7QZG60.woff) format("woff"); }
 /* Basic */
 body, input, select, textarea {
-  color: white;
+  color: black;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 15pt;
   font-weight: 300 !important;
@@ -102,8 +121,11 @@ a {
   -o-transform: translate3d(0,0,0);
   -ms-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
+  /*
   background-color: #348cb2;
-  background-image: url("images/bg.jpg");
+  */
+  background-color: #303030;
+  /* background-image: url('images/bgmap.svg');*/
   background-position: bottom left;
   background-repeat: repeat-x;
   height: 100%;
@@ -186,6 +208,37 @@ a {
   background-size: 2250px auto;
   width: 6750px; }
 
+/* Spin */
+@-moz-keyframes infinite-spinning {
+  from {
+    transform: rotate(0deg); }
+
+  to {
+    transform: rotate(360deg); } }
+@-webkit-keyframes infinite-spinning {
+  from {
+    transform: rotate(0deg); }
+
+  to {
+    transform: rotate(360deg); } }
+@-o-keyframes infinite-spinning {
+  from {
+    transform: rotate(0deg); }
+
+  to {
+    transform: rotate(360deg); } }
+@-ms-keyframes infinite-spinning {
+  from {
+    transform: rotate(0deg); }
+
+  to {
+    transform: rotate(360deg); } }
+@keyframes infinite-spinning {
+  from {
+    transform: rotate(0deg); }
+
+  to {
+    transform: rotate(360deg); } }
 /* Overlay */
 @-moz-keyframes overlay {
   0% {
@@ -224,7 +277,7 @@ a {
   -ms-animation: overlay 1.5s 1.5s forwards;
   animation: overlay 1.5s 1.5s forwards;
   background-attachment: fixed, fixed;
-  background-image: url("images/overlay-pattern.png"), url("images/overlay.svg");
+  background-image: url("images/overlay-pattern.png"), url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICAgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIgogICB4bWxuczpjYz0iaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbnMjIgogICB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiCiAgIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgeG1sbnM6c29kaXBvZGk9Imh0dHA6Ly9zb2RpcG9kaS5zb3VyY2Vmb3JnZS5uZXQvRFREL3NvZGlwb2RpLTAuZHRkIgogICB4bWxuczppbmtzY2FwZT0iaHR0cDovL3d3dy5pbmtzY2FwZS5vcmcvbmFtZXNwYWNlcy9pbmtzY2FwZSIKICAgd2lkdGg9IjEwMCUiCiAgIGhlaWdodD0iMTAwJSIKICAgaWQ9InN2ZzIiCiAgIHZlcnNpb249IjEuMSIKICAgaW5rc2NhcGU6dmVyc2lvbj0iMC40OC4zLjEgcjk4ODYiCiAgIHNvZGlwb2RpOmRvY25hbWU9ImxpZ2h0LnN2ZyI+CiAgPG1ldGFkYXRhCiAgICAgaWQ9Im1ldGFkYXRhNTUiPgogICAgPHJkZjpSREY+CiAgICAgIDxjYzpXb3JrCiAgICAgICAgIHJkZjphYm91dD0iIj4KICAgICAgICA8ZGM6Zm9ybWF0PmltYWdlL3N2Zyt4bWw8L2RjOmZvcm1hdD4KICAgICAgICA8ZGM6dHlwZQogICAgICAgICAgIHJkZjpyZXNvdXJjZT0iaHR0cDovL3B1cmwub3JnL2RjL2RjbWl0eXBlL1N0aWxsSW1hZ2UiIC8+CiAgICAgICAgPGRjOnRpdGxlPjwvZGM6dGl0bGU+CiAgICAgIDwvY2M6V29yaz4KICAgIDwvcmRmOlJERj4KICA8L21ldGFkYXRhPgogIDxkZWZzCiAgICAgaWQ9ImRlZnM1MyIgLz4KICA8c29kaXBvZGk6bmFtZWR2aWV3CiAgICAgcGFnZWNvbG9yPSIjZmZmZmZmIgogICAgIGJvcmRlcmNvbG9yPSIjNjY2NjY2IgogICAgIGJvcmRlcm9wYWNpdHk9IjEiCiAgICAgb2JqZWN0dG9sZXJhbmNlPSIxMCIKICAgICBncmlkdG9sZXJhbmNlPSIxMCIKICAgICBndWlkZXRvbGVyYW5jZT0iMTAiCiAgICAgaW5rc2NhcGU6cGFnZW9wYWNpdHk9IjAiCiAgICAgaW5rc2NhcGU6cGFnZXNoYWRvdz0iMiIKICAgICBpbmtzY2FwZTp3aW5kb3ctd2lkdGg9IjEzMTciCiAgICAgaW5rc2NhcGU6d2luZG93LWhlaWdodD0iNzQ0IgogICAgIGlkPSJuYW1lZHZpZXc1MSIKICAgICBzaG93Z3JpZD0iZmFsc2UiCiAgICAgaW5rc2NhcGU6em9vbT0iMC40NDg1MTQ3OSIKICAgICBpbmtzY2FwZTpjeD0iMTYyLjA4MTgiCiAgICAgaW5rc2NhcGU6Y3k9IjU2OC4xNTE4NyIKICAgICBpbmtzY2FwZTp3aW5kb3cteD0iNDkiCiAgICAgaW5rc2NhcGU6d2luZG93LXk9IjI0IgogICAgIGlua3NjYXBlOndpbmRvdy1tYXhpbWl6ZWQ9IjEiCiAgICAgaW5rc2NhcGU6Y3VycmVudC1sYXllcj0ic3ZnMiIgLz4KICA8cmFkaWFsR3JhZGllbnQKICAgICBpZD0iZyIKICAgICBjeD0iNTAlIgogICAgIGN5PSI1MCUiCiAgICAgcj0iNTAlIj4KICAgIDxzdG9wCiAgICAgICBvZmZzZXQ9IjAlIgogICAgICAgc3R5bGU9InN0b3AtY29sb3I6I2ZmZmZmZjsiCiAgICAgICBpZD0ic3RvcDUiIC8+CiAgICA8c3RvcAogICAgICAgb2Zmc2V0PSI1MCUiCiAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojNTJjNWZmOyIKICAgICAgIGlkPSJzdG9wNyIgLz4KICAgIDxzdG9wCiAgICAgICBvZmZzZXQ9IjEwMCUiCiAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojMDc5MWIzOyIKICAgICAgIGlkPSJzdG9wOSIgLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0CiAgICAgd2lkdGg9IjEwMCUiCiAgICAgaGVpZ2h0PSIxMDAlIgogICAgIGlkPSJyZWN0MTEiCiAgICAgZmlsbD0idXJsKCNnKSIKICAgICBzdHlsZT0ib3BhY2l0eTowLjUiIC8+CiAgPHN2ZwogICAgIHg9IjUwJSIKICAgICB5PSI1MCUiCiAgICAgb3ZlcmZsb3c9InZpc2libGUiCiAgICAgaWQ9InN2ZzEzIgogICAgIHZlcnNpb249IjEuMSIKICAgICBzdHlsZT0ib3BhY2l0eTowLjUiPgogICAgPHJlY3QKICAgICAgIHdpZHRoPSIyMDAwJSIKICAgICAgIGhlaWdodD0iMjAwMCUiCiAgICAgICB0cmFuc2Zvcm09InJvdGF0ZSgyMCkiCiAgICAgICBpZD0icmVjdDE1IgogICAgICAgZmlsbC1vcGFjaXR5PSIwLjEiCiAgICAgICBmaWxsPSIjZmZmZmZmIiAvPgogICAgPHJlY3QKICAgICAgIHdpZHRoPSIyMDAwJSIKICAgICAgIGhlaWdodD0iMjAwMCUiCiAgICAgICB0cmFuc2Zvcm09InJvdGF0ZSg0MCkiCiAgICAgICBpZD0icmVjdDE3IgogICAgICAgZmlsbC1vcGFjaXR5PSIwLjEiCiAgICAgICBmaWxsPSIjZmZmZmZmIiAvPgogICAgPHJlY3QKICAgICAgIHdpZHRoPSIyMDAwJSIKICAgICAgIGhlaWdodD0iMjAwMCUiCiAgICAgICB0cmFuc2Zvcm09InJvdGF0ZSg2MCkiCiAgICAgICBpZD0icmVjdDE5IgogICAgICAgZmlsbC1vcGFjaXR5PSIwLjEiCiAgICAgICBmaWxsPSIjZmZmZmZmIiAvPgogICAgPHJlY3QKICAgICAgIHdpZHRoPSIyMDAwJSIKICAgICAgIGhlaWdodD0iMjAwMCUiCiAgICAgICB0cmFuc2Zvcm09InJvdGF0ZSg4MCkiCiAgICAgICBpZD0icmVjdDIxIgogICAgICAgZmlsbC1vcGFjaXR5PSIwLjEiCiAgICAgICBmaWxsPSIjZmZmZmZmIiAvPgogICAgPHJlY3QKICAgICAgIHdpZHRoPSIyMDAwJSIKICAgICAgIGhlaWdodD0iMjAwMCUiCiAgICAgICB0cmFuc2Zvcm09InJvdGF0ZSgxMDApIgogICAgICAgaWQ9InJlY3QyMyIKICAgICAgIGZpbGwtb3BhY2l0eT0iMC4xIgogICAgICAgZmlsbD0iI2ZmZmZmZiIgLz4KICAgIDxyZWN0CiAgICAgICB3aWR0aD0iMjAwMCUiCiAgICAgICBoZWlnaHQ9IjIwMDAlIgogICAgICAgdHJhbnNmb3JtPSJyb3RhdGUoMTIwKSIKICAgICAgIGlkPSJyZWN0MjUiCiAgICAgICBmaWxsLW9wYWNpdHk9IjAuMSIKICAgICAgIGZpbGw9IiNmZmZmZmYiIC8+CiAgICA8cmVjdAogICAgICAgd2lkdGg9IjIwMDAlIgogICAgICAgaGVpZ2h0PSIyMDAwJSIKICAgICAgIHRyYW5zZm9ybT0icm90YXRlKDE0MCkiCiAgICAgICBpZD0icmVjdDI3IgogICAgICAgZmlsbC1vcGFjaXR5PSIwLjEiCiAgICAgICBmaWxsPSIjZmZmZmZmIiAvPgogICAgPHJlY3QKICAgICAgIHdpZHRoPSIyMDAwJSIKICAgICAgIGhlaWdodD0iMjAwMCUiCiAgICAgICB0cmFuc2Zvcm09InJvdGF0ZSgxNjApIgogICAgICAgaWQ9InJlY3QyOSIKICAgICAgIGZpbGwtb3BhY2l0eT0iMC4xIgogICAgICAgZmlsbD0iI2ZmZmZmZiIgLz4KICAgIDxyZWN0CiAgICAgICB3aWR0aD0iMjAwMCUiCiAgICAgICBoZWlnaHQ9IjIwMDAlIgogICAgICAgdHJhbnNmb3JtPSJyb3RhdGUoMTgwKSIKICAgICAgIGlkPSJyZWN0MzEiCiAgICAgICBmaWxsLW9wYWNpdHk9IjAuMSIKICAgICAgIGZpbGw9IiNmZmZmZmYiIC8+CiAgICA8cmVjdAogICAgICAgd2lkdGg9IjIwMDAlIgogICAgICAgaGVpZ2h0PSIyMDAwJSIKICAgICAgIHRyYW5zZm9ybT0icm90YXRlKDIwMCkiCiAgICAgICBpZD0icmVjdDMzIgogICAgICAgZmlsbC1vcGFjaXR5PSIwLjEiCiAgICAgICBmaWxsPSIjZmZmZmZmIiAvPgogICAgPHJlY3QKICAgICAgIHdpZHRoPSIyMDAwJSIKICAgICAgIGhlaWdodD0iMjAwMCUiCiAgICAgICB0cmFuc2Zvcm09InJvdGF0ZSgyMjApIgogICAgICAgaWQ9InJlY3QzNSIKICAgICAgIGZpbGwtb3BhY2l0eT0iMC4xIgogICAgICAgZmlsbD0iI2ZmZmZmZiIgLz4KICAgIDxyZWN0CiAgICAgICB3aWR0aD0iMjAwMCUiCiAgICAgICBoZWlnaHQ9IjIwMDAlIgogICAgICAgdHJhbnNmb3JtPSJyb3RhdGUoMjQwKSIKICAgICAgIGlkPSJyZWN0MzciCiAgICAgICBmaWxsLW9wYWNpdHk9IjAuMSIKICAgICAgIGZpbGw9IiNmZmZmZmYiIC8+CiAgICA8cmVjdAogICAgICAgd2lkdGg9IjIwMDAlIgogICAgICAgaGVpZ2h0PSIyMDAwJSIKICAgICAgIHRyYW5zZm9ybT0icm90YXRlKDI2MCkiCiAgICAgICBpZD0icmVjdDM5IgogICAgICAgZmlsbC1vcGFjaXR5PSIwLjEiCiAgICAgICBmaWxsPSIjZmZmZmZmIiAvPgogICAgPHJlY3QKICAgICAgIHdpZHRoPSIyMDAwJSIKICAgICAgIGhlaWdodD0iMjAwMCUiCiAgICAgICB0cmFuc2Zvcm09InJvdGF0ZSgyODApIgogICAgICAgaWQ9InJlY3Q0MSIKICAgICAgIGZpbGwtb3BhY2l0eT0iMC4xIgogICAgICAgZmlsbD0iI2ZmZmZmZiIgLz4KICAgIDxyZWN0CiAgICAgICB3aWR0aD0iMjAwMCUiCiAgICAgICBoZWlnaHQ9IjIwMDAlIgogICAgICAgdHJhbnNmb3JtPSJyb3RhdGUoMzAwKSIKICAgICAgIGlkPSJyZWN0NDMiCiAgICAgICBmaWxsLW9wYWNpdHk9IjAuMSIKICAgICAgIGZpbGw9IiNmZmZmZmYiIC8+CiAgICA8cmVjdAogICAgICAgd2lkdGg9IjIwMDAlIgogICAgICAgaGVpZ2h0PSIyMDAwJSIKICAgICAgIHRyYW5zZm9ybT0icm90YXRlKDMyMCkiCiAgICAgICBpZD0icmVjdDQ1IgogICAgICAgZmlsbC1vcGFjaXR5PSIwLjEiCiAgICAgICBmaWxsPSIjZmZmZmZmIiAvPgogICAgPHJlY3QKICAgICAgIHdpZHRoPSIyMDAwJSIKICAgICAgIGhlaWdodD0iMjAwMCUiCiAgICAgICB0cmFuc2Zvcm09InJvdGF0ZSgzNDApIgogICAgICAgaWQ9InJlY3Q0NyIKICAgICAgIGZpbGwtb3BhY2l0eT0iMC4xIgogICAgICAgZmlsbD0iI2ZmZmZmZiIgLz4KICAgIDxyZWN0CiAgICAgICB3aWR0aD0iMjAwMCUiCiAgICAgICBoZWlnaHQ9IjIwMDAlIgogICAgICAgaWQ9InJlY3Q0OSIKICAgICAgIGZpbGwtb3BhY2l0eT0iMC4xIgogICAgICAgZmlsbD0iI2ZmZmZmZiIKICAgICAgIHRyYW5zZm9ybT0icm90YXRlKDM2MCkiIC8+CiAgPC9zdmc+Cjwvc3ZnPgo=);
   background-position: top left, center center;
   background-repeat: repeat, no-repeat;
   background-size: auto, cover;
@@ -542,7 +595,7 @@ a {
         -ms-transition: all 0.2s ease-in-out;
         transition: all 0.2s ease-in-out;
         border-radius: 100%;
-        border: solid 1px white;
+        border: solid 1px black;
         display: block;
         font-size: 1.75em;
         height: 2.5em;
@@ -555,13 +608,13 @@ a {
         font-size: 1.1em; }
         #header nav a:hover:before {
           background-color: rgba(255, 255, 255, 0.175);
-          color: white; }
+          color: #666666; }
       #header nav a:active {
         font-size: 0.95em;
         background: none; }
         #header nav a:active:before {
           background-color: rgba(255, 255, 255, 0.35);
-          color: white; }
+          color: #666666; }
       #header nav a span {
         display: none; }
 

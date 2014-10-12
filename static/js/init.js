@@ -5,55 +5,58 @@
 */
 
 // Skel.
-skel.init({
-    reset: 'full',
-    breakpoints: {
-        'global': { range: '*', href: 'css/style.min.css', lockViewport: true, viewport: 'minimal-ui' },
-        'wide': { range: '-1680', href: 'css/style-wide.min.css' },
-        'normal': { range: '-1280', href: 'css/style-normal.min.css' },
-        'mobile': { range: '-640', href: 'css/style-mobile.min.css' },
-        'mobilep': { range: '-360', href: 'css/style-mobilep.min.css' }
-    }
-});
+(function () {
+    'use strict';
+    skel.init({
+        reset: 'full',
+        breakpoints: {
+            'global': { range: '*', href: 'css/style.min.css', lockViewport: true, viewport: 'minimal-ui' },
+            'wide': { range: '-1680', href: 'css/style-wide.min.css' },
+            'normal': { range: '-1280', href: 'css/style-normal.min.css' },
+            'mobile': { range: '-640', href: 'css/style-mobile.min.css' },
+            'mobilep': { range: '-360', href: 'css/style-mobilep.min.css' }
+        }
+    });
 
-// Events (JS).
+    // Events (JS).
 
-// Remove "loading" class once the page has fully loaded.
-window.onload = function() {
-    document.body.className = '';
-};
+    // Remove "loading" class once the page has fully loaded.
+    window.onload = function() {
+        document.body.className = '';
+    };
 
-// Prevent scrolling on touch.
-window.ontouchmove = function() {
-    return false;
-};
+    // Prevent scrolling on touch.
+    window.ontouchmove = function() {
+        return false;
+    };
 
-// Fix scroll position on orientation change.
-window.onorientationchange = function() {
-    document.body.scrollTop = 0;
-};
+    // Fix scroll position on orientation change.
+    window.onorientationchange = function() {
+        document.body.scrollTop = 0;
+    };
 
-/*
+    /*
 
-// Events (jQuery).
-// Aerial doesn't need jQuery, but if you're going to use it anyway remove the
-// block of JS events above and use the jQuery-based ones below instead.
+    // Events (jQuery).
+    // Aerial doesn't need jQuery, but if you're going to use it anyway remove the
+    // block of JS events above and use the jQuery-based ones below instead.
 
-    $(window)
+        $(window)
 
-        // Remove "loading" class once the page has fully loaded.
-            .on('load', function() {
-                $('body').removeClass('loading');
-            })
+            // Remove "loading" class once the page has fully loaded.
+                .on('load', function() {
+                    $('body').removeClass('loading');
+                })
 
-        // Prevent scrolling on touch.
-            .on('touchmove', function() {
-                return false;
-            })
+            // Prevent scrolling on touch.
+                .on('touchmove', function() {
+                    return false;
+                })
 
-        // Fix scroll position on orientation change.
-            .on('orientationchange', function() {
-                $('body').scrollTop(0);
-            });
+            // Fix scroll position on orientation change.
+                .on('orientationchange', function() {
+                    $('body').scrollTop(0);
+                });
 
-*/
+    */
+}());

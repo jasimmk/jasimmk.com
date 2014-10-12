@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="100%"
+   height="100%"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.3.1 r9886"
+   sodipodi:docname="light.svg">
+  <metadata
+     id="metadata55">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs53" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1317"
+     inkscape:window-height="744"
+     id="namedview51"
+     showgrid="false"
+     inkscape:zoom="0.44851479"
+     inkscape:cx="162.0818"
+     inkscape:cy="568.15187"
+     inkscape:window-x="49"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
+  <radialGradient
+     id="g"
+     cx="50%"
+     cy="50%"
+     r="50%">
+    <stop
+       offset="0%"
+       style="stop-color:#ffffff;"
+       id="stop5" />
+    <stop
+       offset="50%"
+       style="stop-color:#52c5ff;"
+       id="stop7" />
+    <stop
+       offset="100%"
+       style="stop-color:#0791b3;"
+       id="stop9" />
+  </radialGradient>
+  <rect
+     width="100%"
+     height="100%"
+     id="rect11"
+     fill="url(#g)"
+     style="opacity:0.5" />
+  <svg
+     x="50%"
+     y="50%"
+     overflow="visible"
+     id="svg13"
+     version="1.1"
+     style="opacity:0.5">
+    <rect
+       width="2000%"
+       height="2000%"
+       transform="rotate(20)"
+       id="rect15"
+       fill-opacity="0.1"
+       fill="#ffffff" />
+    <rect
+       width="2000%"
+       height="2000%"
+       transform="rotate(40)"
+       id="rect17"
+       fill-opacity="0.1"
+       fill="#ffffff" />
+    <rect
+       width="2000%"
+       height="2000%"
+       transform="rotate(60)"
+       id="rect19"
+       fill-opacity="0.1"
+       fill="#ffffff" />
+    <rect
+       width="2000%"
+       height="2000%"
+       transform="rotate(80)"
+       id="rect21"
+       fill-opacity="0.1"
+       fill="#ffffff" />
+    <rect
+       width="2000%"
+       height="2000%"
+       transform="rotate(100)"
+       id="rect23"
+       fill-opacity="0.1"
+       fill="#ffffff" />
+    <rect
+       width="2000%"
+       height="2000%"
+       transform="rotate(120)"
+       id="rect25"
+       fill-opacity="0.1"
+       fill="#ffffff" />
+    <rect
+       width="2000%"
+       height="2000%"
+       transform="rotate(140)"
+       id="rect27"
+       fill-opacity="0.1"
+       fill="#ffffff" />
+    <rect
+       width="2000%"
+       height="2000%"
+       transform="rotate(160)"
+       id="rect29"
+       fill-opacity="0.1"
+       fill="#ffffff" />
+    <rect
+       width="2000%"
+       height="2000%"
+       transform="rotate(180)"
+       id="rect31"
+       fill-opacity="0.1"
+       fill="#ffffff" />
+    <rect
+       width="2000%"
+       height="2000%"
+       transform="rotate(200)"
+       id="rect33"
+       fill-opacity="0.1"
+       fill="#ffffff" />
+    <rect
+       width="2000%"
+       height="2000%"
+       transform="rotate(220)"
+       id="rect35"
+       fill-opacity="0.1"
+       fill="#ffffff" />
+    <rect
+       width="2000%"
+       height="2000%"
+       transform="rotate(240)"
+       id="rect37"
+       fill-opacity="0.1"
+       fill="#ffffff" />
+    <rect
+       width="2000%"
+       height="2000%"
+       transform="rotate(260)"
+       id="rect39"
+       fill-opacity="0.1"
+       fill="#ffffff" />
+    <rect
+       width="2000%"
+       height="2000%"
+       transform="rotate(280)"
+       id="rect41"
+       fill-opacity="0.1"
+       fill="#ffffff" />
+    <rect
+       width="2000%"
+       height="2000%"
+       transform="rotate(300)"
+       id="rect43"
+       fill-opacity="0.1"
+       fill="#ffffff" />
+    <rect
+       width="2000%"
+       height="2000%"
+       transform="rotate(320)"
+       id="rect45"
+       fill-opacity="0.1"
+       fill="#ffffff" />
+    <rect
+       width="2000%"
+       height="2000%"
+       transform="rotate(340)"
+       id="rect47"
+       fill-opacity="0.1"
+       fill="#ffffff" />
+    <rect
+       width="2000%"
+       height="2000%"
+       id="rect49"
+       fill-opacity="0.1"
+       fill="#ffffff"
+       transform="rotate(360)" />
+  </svg>
+</svg>
