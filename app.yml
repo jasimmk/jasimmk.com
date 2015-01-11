@@ -1,5 +1,5 @@
-application: jasimmk
-version: 2
+application: jasimmkv2
+version: 3
 runtime: python27
 api_version: 1
 threadsafe: yes
@@ -34,4 +34,6 @@ skip_files:
 - ^testrunner\.py
 - ^grunt\.js
 - ^node_modules/(.*/)?
+- ^static/node_modules/(.*/)?
+- ^static/bower/(.*/)?
 - run.sh
