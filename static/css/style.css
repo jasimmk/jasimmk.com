@@ -7,16 +7,15 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 
 
 .loading {
-  background-color: 437B89;
-  padding: 0;
-  margin: 0;
-  color: #fff;
+  color: #333;
   line-height: 1.5em;
-  text-align: center;
   height: 100%;
-  position: relative;
-  overflow: hidden;
-  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: 9998;
+  display: table;
   
 }
 @-webkit-keyframes bouncedelay {
@@ -37,16 +36,15 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
     -webkit-transform: scale(1.0);
   }
 }
+.middle {
+    display: table-cell;
+    vertical-align: middle;
+}
 .loading .spinner {
-  margin: auto;
+  margin:0 auto;
   width: 70px;
-  text-align: center;
-  z-index: 8999;
-  top:0;
-  right: 0;
-  bottom: 0;
-  left: 0;
   position: absolute;
+  z-index: 9999;
 }
 .loading .spinner > div {
   width: 18px;
@@ -106,13 +104,13 @@ body {
   background: white;
   overflow: hidden;
 }
-body.loading * {
+/*body.loading {
   -moz-animation: none !important;
   -webkit-animation: none !important;
   -o-animation: none !important;
   -ms-animation: none !important;
   animation: none !important;
-}
+}*/
 a {
   -moz-transition: border-color 0.2s ease-in-out;
   -webkit-transition: border-color 0.2s ease-in-out;

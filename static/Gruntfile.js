@@ -1,4 +1,4 @@
-module.exports = function(grunt) {
+module.exports = function (grunt) {
     grunt.initConfig({
 
         pkg: grunt.file.readJSON('package.json'),
@@ -14,7 +14,7 @@ module.exports = function(grunt) {
                 options: {
                     destPrefix: 'css/packages'
                 },
-                files : {
+                files: {
                     'font-awesome.css': 'font-awesome/css/font-awesome.css'
                 }
             },
@@ -33,8 +33,8 @@ module.exports = function(grunt) {
             }
         },
         /**
-        *  http://jonsuh.com/blog/get-started-with-grunt/
-        */
+         *  http://jonsuh.com/blog/get-started-with-grunt/
+         */
         sass: {
             jasimmk: {
                 files: {
@@ -168,7 +168,7 @@ module.exports = function(grunt) {
                 tasks: ['sass:jasimmk']
             },
             css: {
-                files: ['css/*.css', 'css/**/*.css'],
+                files: ['css/*.css', '!css/*.min.css', 'css/**/*.css', '!css/**/*.min.css'],
                 tasks: ['cssmin']
             },
             js: {
