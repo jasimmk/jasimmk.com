@@ -27,6 +27,7 @@ coverage_report/
 nosetests.xml
 pylint.txt
 /uploads/
+/static/bower_components
 # Ignore databases
 /db.sqlite3
 
